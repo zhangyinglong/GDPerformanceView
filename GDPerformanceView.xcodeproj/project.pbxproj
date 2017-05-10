@@ -24,6 +24,7 @@
 		FC57E9851EC314DD00F8185B /* GDWindowViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 427736881E2BD55100E59793 /* GDWindowViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC57E9861EC314DD00F8185B /* GDPerformanceMonitorProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 428FE57D1E1D19D100F85C8B /* GDPerformanceMonitorProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FC57E9881EC3154E00F8185B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FC57E9871EC3154E00F8185B /* Default-568h@2x.png */; };
+		FC57E99F1EC31FFE00F8185B /* GDPerformanceView-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC57E99E1EC31FFE00F8185B /* GDPerformanceView-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,14 +64,14 @@
 		A53761591DB76D81000007B7 /* GDPerformanceMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceMonitor.m; sourceTree = "<group>"; };
 		A537615A1DB76D81000007B7 /* GDPerformanceView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPerformanceView.h; sourceTree = "<group>"; };
 		A537615B1DB76D81000007B7 /* GDPerformanceView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPerformanceView.m; sourceTree = "<group>"; };
-		A537615C1DB76D81000007B7 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A537615C1DB76D81000007B7 /* GDPerformanceViewExample-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GDPerformanceViewExample-Info.plist"; sourceTree = "<group>"; };
 		A537615D1DB76D81000007B7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A5C8CEBE1DB6203D008D8E15 /* GDPerformanceViewExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDPerformanceViewExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DAC07F1DB7B1A600AF26E6 /* GDMarginLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMarginLabel.h; sourceTree = "<group>"; };
 		A5DAC0801DB7B1A600AF26E6 /* GDMarginLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMarginLabel.m; sourceTree = "<group>"; };
 		FC57E96C1EC3141900F8185B /* GDPerformanceView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GDPerformanceView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FC57E96F1EC3141900F8185B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		FC57E9871EC3154E00F8185B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		FC57E99E1EC31FFE00F8185B /* GDPerformanceView-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GDPerformanceView-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +102,7 @@
 				A53761521DB76D81000007B7 /* Assets.xcassets */,
 				A53761531DB76D81000007B7 /* LaunchScreen.storyboard */,
 				A53761551DB76D81000007B7 /* Main.storyboard */,
-				A537615C1DB76D81000007B7 /* Info.plist */,
+				A537615C1DB76D81000007B7 /* GDPerformanceViewExample-Info.plist */,
 				A537615D1DB76D81000007B7 /* main.m */,
 			);
 			path = GDPerformanceView;
@@ -110,7 +111,7 @@
 		A53761571DB76D81000007B7 /* GDPerformanceMonitoring */ = {
 			isa = PBXGroup;
 			children = (
-				FC57E96F1EC3141900F8185B /* Info.plist */,
+				FC57E99E1EC31FFE00F8185B /* GDPerformanceView-Info.plist */,
 				A53761581DB76D81000007B7 /* GDPerformanceMonitor.h */,
 				A53761591DB76D81000007B7 /* GDPerformanceMonitor.m */,
 				A537615A1DB76D81000007B7 /* GDPerformanceView.h */,
@@ -252,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC57E99F1EC31FFE00F8185B /* GDPerformanceView-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +407,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = GDPerformanceView/Info.plist;
+				INFOPLIST_FILE = "GDPerformanceView/GDPerformanceViewExample-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GD.GDPerformanceViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,7 +420,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = GDPerformanceView/Info.plist;
+				INFOPLIST_FILE = "GDPerformanceView/GDPerformanceViewExample-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = GD.GDPerformanceViewExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -437,7 +439,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GDPerformanceView/Info.plist;
+				INFOPLIST_FILE = "GDPerformanceView/GDPerformanceMonitoring/GDPerformanceView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -460,7 +462,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = GDPerformanceView/Info.plist;
+				INFOPLIST_FILE = "GDPerformanceView/GDPerformanceMonitoring/GDPerformanceView-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -500,6 +502,7 @@
 				FC57E9771EC3141900F8185B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
